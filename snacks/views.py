@@ -10,14 +10,12 @@ from .models import Snack
 
 class SnackListView(ListView): 
     template_name = "snack_list.html"
-    Model = Snack
+    model = Snack
 
-    def get_queryset(self):
-        return Snack
+   
 
 class SnackDetailView(DetailView):
     template_name = "snack_detail.html"
-    Model = Snack
+    model = Snack
 
-    def get_queryset(self):
-        return models.Snack
+    
