@@ -4,10 +4,10 @@ content should display snack’s name, description and purchaser -->
 
 {% extends "base.html" %}
 
-{% block title %} Snack|{{Snack.name}} {% endblock %}
+{% block title %} Snack|{{Snack.name}} {% endblock title %}
 
 {% block content %} 
     <h1>{{Snack.name}}</h1>
     <h2>{{Snack.description}}</h2>
     <h3>{{Snack.purchaser}}</h3>
-{% endblock %}
+{% endblock content %}

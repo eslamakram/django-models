@@ -3,7 +3,7 @@ use Django Templating Language to display each snack’s name -->
 
 {% extends "base.html" %}
 
-{% block title %} Home {% endblock %}
+{% block title %} Home {% endblock title %}
 
 {% block content %} 
     <ul>
@@ -11,4 +11,4 @@ use Django Templating Language to display each snack’s name -->
             <li><a href = "{% url 'snack_detail' snack.pk %}">{{snack.name}} - {{snack.purchaser}} : {{snack.description}}</a></li>
         {% endfor %}
     </ul>
-{% endblock %}
+{% endblock content %}
